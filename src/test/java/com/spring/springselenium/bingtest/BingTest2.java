@@ -26,6 +26,6 @@ public class BingTest2 extends SpringBaseTestNGTest {
         this.bingPage.getSearchComponent().search("spring boot ");
         Assert.assertTrue(this.bingPage.getSearchResult().isAt());
         Assert.assertTrue(this.bingPage.getSearchResult().getCount() > 2);
-        this.screenShotUtil.takeScreenShot("test.png");
+        this.bingPage.close();
     }
 }

@@ -34,4 +34,8 @@ public class BingPage extends Base {
     public boolean isAt() {
         return this.searchComponent.isAt();
     }
+
+    public void close(){
+        this.driver.quit();
+    }
 }
