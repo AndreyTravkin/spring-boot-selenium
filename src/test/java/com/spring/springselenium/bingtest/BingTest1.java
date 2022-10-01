@@ -26,5 +26,7 @@ public class BingTest1 extends SpringBaseTestNGTest {
         this.bingPage.getSearchComponent().search("selenium ");
         Assert.assertTrue(this.bingPage.getSearchResult().isAt());
         Assert.assertTrue(this.bingPage.getSearchResult().getCount() > 2);
+        this.screenShotUtil.takeScreenShot();
+        this.bingPage.close();
     }
 }
