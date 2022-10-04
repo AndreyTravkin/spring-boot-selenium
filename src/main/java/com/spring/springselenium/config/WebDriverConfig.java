@@ -15,14 +15,14 @@ public class WebDriverConfig {
 
     @Bean
     @Scope("browserscope")
-    @ConditionalOnMissingBean
+//    @ConditionalOnMissingBean
     public WebDriver chromeDriver() {
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
     }
 
     @Bean
-    @ConditionalOnProperty(name = "browser", havingValue = "firefox")
+//    @ConditionalOnProperty(name = "browser", havingValue = "firefox")
     public WebDriver firefoxDriver() {
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();
