@@ -1,6 +1,6 @@
 package com.spring.springselenium.page.bing;
 
-import com.spring.springselenium.annotation.PageFragment;
+import com.spring.springselenium.kelvin.annotation.PageFragment;
 import com.spring.springselenium.page.Base;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;

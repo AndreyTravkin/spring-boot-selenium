@@ -1,7 +1,7 @@
-package com.spring.springselenium.config;
+package com.spring.springselenium.kelvin.config;
 
 import com.github.javafaker.Faker;
-import com.spring.springselenium.annotation.LazyConfiguration;
+import com.spring.springselenium.kelvin.annotation.LazyConfiguration;
 import org.springframework.context.annotation.Bean;
 
 

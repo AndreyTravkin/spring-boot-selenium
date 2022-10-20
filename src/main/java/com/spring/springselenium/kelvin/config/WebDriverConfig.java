@@ -1,6 +1,7 @@
-package com.spring.springselenium.config;
+package com.spring.springselenium.kelvin.config;
 
-import com.spring.springselenium.annotation.LazyConfiguration;
+import com.spring.springselenium.kelvin.annotation.LazyConfiguration;
+import com.spring.springselenium.kelvin.annotation.ThreadScopeBean;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,16 +14,15 @@ import org.springframework.context.annotation.*;
 @Profile("!remote")
 public class WebDriverConfig {
 
-    @Bean
-    @Scope("browserscope")
-//    @ConditionalOnMissingBean
+    @ThreadScopeBean
+    @ConditionalOnMissingBean
     public WebDriver chromeDriver() {
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
     }
 
-    @Bean
-//    @ConditionalOnProperty(name = "browser", havingValue = "firefox")
+    @ThreadScopeBean
+    @ConditionalOnProperty(name = "browser", havingValue = "firefox")
     public WebDriver firefoxDriver() {
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();

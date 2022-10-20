@@ -1,6 +1,6 @@
 package com.spring.springselenium.page.bing;
 
-import com.spring.springselenium.annotation.Page;
+import com.spring.springselenium.kelvin.annotation.Page;
 import com.spring.springselenium.page.Base;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

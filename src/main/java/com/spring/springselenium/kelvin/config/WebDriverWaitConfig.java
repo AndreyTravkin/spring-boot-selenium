@@ -1,6 +1,6 @@
-package com.spring.springselenium.config;
+package com.spring.springselenium.kelvin.config;
 
-import com.spring.springselenium.annotation.LazyConfiguration;
+import com.spring.springselenium.kelvin.annotation.LazyConfiguration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,4 +1,4 @@
-package com.spring.springselenium.annotation;
+package com.spring.springselenium.kelvin.annotation;
 
 
 import org.springframework.context.annotation.Lazy;
